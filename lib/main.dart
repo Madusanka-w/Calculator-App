@@ -15,11 +15,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         title: "Test app",
         theme: ThemeData(
-          primaryColor: Colors.blue,
-          appBarTheme: AppBarTheme(
-            iconTheme: IconThemeData(color: Colors.black),
-          ),
+          primaryColor: Colors.green, // Change the primary color here
         ),
+
         // ignore: prefer_const_constructors
         home: CalculatorApp());
   }

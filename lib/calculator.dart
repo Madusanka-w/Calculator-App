@@ -54,6 +54,9 @@ class _CalculatorAppState extends State<CalculatorApp> {
       color: buttonColor,
       child: ElevatedButton(
         onPressed: () => onButtonPressed(buttonText),
+        style: ButtonStyle(
+          backgroundColor: MaterialStateProperty.all<Color>(buttonColor),
+        ),
         child: Text(
           buttonText,
           style: TextStyle(fontSize: 24.0),
@@ -101,36 +104,36 @@ class _CalculatorAppState extends State<CalculatorApp> {
                       TableRow(
                         children: [
                           buildButton('C', 1, Colors.blue),
-                          buildButton('Del', 1, Colors.blue),
-                          buildButton('/', 1, Colors.blue),
+                          buildButton('Del', 1, Colors.green),
+                          buildButton('/', 1, Colors.red),
                         ],
                       ),
                       TableRow(
                         children: [
-                          buildButton('7', 1, Colors.blue),
-                          buildButton('8', 1, Colors.blue),
-                          buildButton('9', 1, Colors.blue),
+                          buildButton('7', 1, Colors.black),
+                          buildButton('8', 1, Colors.black),
+                          buildButton('9', 1, Colors.black),
                         ],
                       ),
                       TableRow(
                         children: [
-                          buildButton('4', 1, Colors.blue),
-                          buildButton('5', 1, Colors.blue),
-                          buildButton('6', 1, Colors.blue),
+                          buildButton('4', 1, Colors.black),
+                          buildButton('5', 1, Colors.black),
+                          buildButton('6', 1, Colors.black),
                         ],
                       ),
                       TableRow(
                         children: [
-                          buildButton('1', 1, Colors.blue),
-                          buildButton('2', 1, Colors.blue),
-                          buildButton('3', 1, Colors.blue),
+                          buildButton('1', 1, Colors.black),
+                          buildButton('2', 1, Colors.black),
+                          buildButton('3', 1, Colors.black),
                         ],
                       ),
                       TableRow(
                         children: [
-                          buildButton('.', 1, Colors.blue),
-                          buildButton('0', 1, Colors.blue),
-                          buildButton('00', 1, Colors.blue),
+                          buildButton('.', 1, Colors.black),
+                          buildButton('0', 1, Colors.black),
+                          buildButton('00', 1, Colors.black),
                         ],
                       )
                     ])),
